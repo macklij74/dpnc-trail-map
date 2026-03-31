@@ -1,10 +1,10 @@
 const CACHE = 'dpnc-trails-v1';
 const ASSETS = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/icon-192.svg',
-  '/icon-512.svg',
+  './',
+  './index.html',
+  './manifest.json',
+  './icon-192.svg',
+  './icon-512.svg',
   'https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Lora:ital,wght@0,500;1,400&display=swap'
 ];
 
@@ -28,6 +28,6 @@ self.addEventListener('fetch', e => {
       const clone = res.clone();
       caches.open(CACHE).then(cache => cache.put(e.request, clone));
       return res;
-    }).catch(() => caches.match('/index.html')))
+    }).catch(() => caches.match('./index.html')))
   );
 });
