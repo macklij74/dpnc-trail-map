@@ -2,7 +2,7 @@
   "name": "DPNC Trails — Denison Pequotsepos Nature Center",
   "short_name": "DPNC Trails",
   "description": "Explore trails at Denison Pequotsepos Nature Center & Coogan Farm",
-  "start_url": "/index.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#f8fdf7",
   "theme_color": "#2d6a4f",
